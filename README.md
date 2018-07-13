@@ -23,13 +23,13 @@ split 1 list downloaded from [1] did not exist.
 I have written this script therefore to help me download all videos as they apply to the train-test split downloaded from [1]
 
 
--------------------- REFERENCES ------------------------
+REFERENCES
 [1] The Train/Test Splits for Action Recognition. http://crcv.ucf.edu/data/UCF101/UCF101TrainTestSplits-RecognitionTask.zip
 [2] The Train/Test Splits for Action Detection. http://crcv.ucf.edu/data/UCF101/UCF101TrainTestSplits-DetectionTask.zip
 [3] Index of /THUMOS14/UCF101/UCF101.  http://crcv.ucf.edu/THUMOS14/UCF101/UCF101/
 [4] UCF101 - Action Recognition Data Set. http://crcv.ucf.edu/data/UCF101/UCF101.rar
 
 
------------ HOW TO USE -----------
+HOW TO USE
 1. Download the train- test split from [1] or [2] (depending on what you are doing) as a text file
 2. Modify the parameters of this scrip in the *** modify section **** below and run
