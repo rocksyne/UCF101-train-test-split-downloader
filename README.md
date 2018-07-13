@@ -24,10 +24,10 @@ I have written this script therefore to help me download all videos as they appl
 
 
 REFERENCES
-[1] The Train/Test Splits for Action Recognition. http://crcv.ucf.edu/data/UCF101/UCF101TrainTestSplits-RecognitionTask.zip
-[2] The Train/Test Splits for Action Detection. http://crcv.ucf.edu/data/UCF101/UCF101TrainTestSplits-DetectionTask.zip
-[3] Index of /THUMOS14/UCF101/UCF101.  http://crcv.ucf.edu/THUMOS14/UCF101/UCF101/
-[4] UCF101 - Action Recognition Data Set. http://crcv.ucf.edu/data/UCF101/UCF101.rar
+1. The Train/Test Splits for Action Recognition. http://crcv.ucf.edu/data/UCF101/UCF101TrainTestSplits-RecognitionTask.zip
+2. The Train/Test Splits for Action Detection. http://crcv.ucf.edu/data/UCF101/UCF101TrainTestSplits-DetectionTask.zip
+3. Index of /THUMOS14/UCF101/UCF101.  http://crcv.ucf.edu/THUMOS14/UCF101/UCF101/
+4. UCF101 - Action Recognition Data Set. http://crcv.ucf.edu/data/UCF101/UCF101.rar
 
 
 HOW TO USE
