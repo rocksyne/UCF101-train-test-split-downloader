@@ -19,7 +19,7 @@ IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 # split 1 list downloaded from [1] did not exist.
 
 # I have written this script therefore to help me download all videos as they apply to the train-test split downloaded from [1]
-
+# This script is not fail proof but just an adhock script. You can help make it better if you have the time, please.
 
 # -------------------- REFERENCES ------------------------
 # [1] The Train/Test Splits for Action Recognition. http://crcv.ucf.edu/data/UCF101/UCF101TrainTestSplits-RecognitionTask.zip
@@ -121,20 +121,35 @@ saveDestination = "./Train_Dataset"
 # put the content in a variable
 ls = dataList(textFileList)
 
+# provide a list of files names you want to skip downloading
+# The full path is not needed! Just the file name
+skips = []
+
 #loop through the list and download each file
 # use tqdm to get a nice progress bar
 for _ls in tqdm(ls):
     
     # split the path into directory name and file name from the file name in the list
     nFolder,nFile = os.path.split(_ls)
-    
+
     # reassign the variable to get the full path to where the video should be saved
     nFolder = os.path.join(saveDestination,nFolder)
-    
+
+    # this is the full path of destination file
+    nFile_ = os.path.join(nFolder,nFile)
+
     # if the destination directory does not exist, create it
     if not os.path.exists(nFolder):
         os.makedirs(nFolder)
     
-    # download the videi (file) and save into the designated directory   
-    downloader(nFile,nFolder)
+    # download only files that are absent: This is good for resuming a download after network interruption
+    if not os.path.exists(nFile_):
+        # download the video (file) and save into the designated directory
+        print("Downloading: ",nFile)
+
+        if nFile not in skips: 
+        	downloader(nFile,nFolder)
+
+    else:
+        print("Skipped: ",nFile_)
 
